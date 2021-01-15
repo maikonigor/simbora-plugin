@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="br.com.simboradelivery"
+    version="1.0.0">
+
+    <name>simbora-plugin</name>
+    <description>Edit the info.plist file</description>
+    <author>Maikon Soares</author>
+
+    <platform name="ios">
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+            <string>O aplicativo informa ao utilizador o valor da taxa de entrega de cada estabelecimento mostrado na tela.
+                    Caso o utilizador não esteja autenticado, ou não possua endereços de entrega cadastrados, a taxa de entrega é calculada em função da distância a partir da sua localização atual até o estabelecimento.
+                    Para a realização desse cálculo é necessária a permissão para utilizar sua localização</string>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>O aplicativo informa ao utilizador o valor da taxa de entrega de cada estabelecimento mostrado na tela.
+                    Caso o utilizador não esteja autenticado, ou não possua endereços de entrega cadastrados, a taxa de entrega é calculada em função da distância a partir da sua localização atual até o estabelecimento.
+                    Para a realização desse cálculo é necessária a permissão para utilizar sua localização</string>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSLocationUsageDescription">
+            <string>O aplicativo informa ao utilizador o valor da taxa de entrega de cada estabelecimento mostrado na tela.
+                    Caso o utilizador não esteja autenticado, ou não possua endereços de entrega cadastrados, a taxa de entrega é calculada em função da distância a partir da sua localização atual até o estabelecimento.
+                    Para a realização desse cálculo é necessária a permissão para utilizar sua localização</string>
+        </config-file>
+
+         <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            <string> O aplicativo permite que o usuário cadastre uma foto de perfil, caso deseje.
+            Para isso, é necessária a permissão para utilizar a câmera do aparelho para que seja possível utilizá-la como fonte para capturar a imagem a ser salva no perfil do usuário.</string>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+            <string> O aplicativo permite que o usuário cadastre uma foto de perfil, caso deseje.
+            Para isso, é necessária a permissão para utilizar galeria de imagens do aparelho para o aplicativo possa utilizá-la como fonte para capturar a imagem a ser salva no perfil do usuário.</string>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
+            <string> O aplicativo permite que o usuário cadastre uma foto de perfil, caso deseje.
+            Para isso, é necessária a permissão para salvar imagens adquiridas pela câmera na galeria de fotos do dispositivo.</string>
+        </config-file>
+
+
+    </platform>
+</plugin>

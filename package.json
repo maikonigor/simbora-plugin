@@ -1,0 +1,14 @@
+{
+    "name": "simbora-plugin",
+    "version": "1.0.0",
+    "description": "Edit the info.plist file",
+    "cordova": {
+      "id": "br.com.simboradelivery",
+      "platforms": [
+        "ios"
+      ]
+    },
+    
+    "author": "Maikon Soares"
+    
+  }
